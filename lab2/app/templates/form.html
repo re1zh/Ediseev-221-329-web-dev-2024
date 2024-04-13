@@ -3,12 +3,11 @@
 {% block content %}
     <h1>Форма</h1>
     <form class="form" method="post">
-        <label for="login">Login</label>
+        <label for="login">login</label>
         <input type="text" id="login" name="login" placeholder="login" value="{{ request.form['login'] }}">
 
         <label for="password">password</label>
-        <input type="password" id="password" name="password" placeholder="password"
-               value="{{ request.form['password'] }}">
+        <input type="password" id="password" name="password" placeholder="password" value="{{ request.form['password'] }}">
         <button type="submit"> Отправить</button>
     </form>
 
