@@ -1,8 +1,0 @@
-{% extends 'base.html' %}
-
-{% from 'form.html' import user_form %}
-
-{% block content %}
-    <h1 class="mb-3">Добавление пользователя</h1>
-    {{ user_form(roles, 'new', user_data, errors = errors) }}
-{% endblock %}
